@@ -94,7 +94,7 @@ def run(miao_miao, max_workers=None, single=False, proxy=False):
     # 获取秒杀人信息
     user = miao_miao.get_user_cache()
     # 选取秒杀即将开始的疫苗列表
-    params = _build_skill_param(user[0], vaccines)
+    params = _build_skill_param(user[1], vaccines)
     if not params:
         print('秒杀还未开始,请开始前5S执行')
         exit(0)
